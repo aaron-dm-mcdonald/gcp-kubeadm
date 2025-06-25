@@ -1,9 +1,11 @@
+# GCP VMs and kubeadm for Kubernetes
+
+```bash
 sudo apt-get install netcat-traditional
 nc 127.0.0.1 6443 -zv -w 2
+```
 
-
-Outputs:
-
+```bash
 kubemaster = {
   "name" = "kubemaster"
   "ssh_command" = "gcloud compute ssh kubemaster --zone=us-central1-a"
@@ -24,7 +26,7 @@ kubenode = [
     "vm_internal_ip" = "192.168.56.4"
   },
 ]
-
+```
 
 
 
